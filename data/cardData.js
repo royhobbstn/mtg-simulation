@@ -5,3 +5,7 @@ exports.cardData = [
   },
   { id: 1, name: 'Lightning Bolt' },
 ];
+
+// disintegrate
+
+// fireball

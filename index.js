@@ -52,9 +52,29 @@ class Game {
     }
   }
 
+  multiplePlayersAreStillAlive() {
+    let playerCount = 0;
+    for (let player of this.players) {
+      if (player.life > 0) {
+        playerCount++;
+      }
+    }
+    return playerCount > 1;
+  }
+
   startGame() {
     this.createDecks();
-    this.drawCards(this.getRandomPlayer());
+    this.turn = this.getRandomPlayer();
+    this.drawCards(this.turn);
+    // -------------
+    let preventInfinite = 0;
+    while (this.multiplePlayersAreStillAlive()) {
+      preventInfinite++;
+      if (preventInfinite > 1000000) {
+        throw new Error('breaking infinite loop');
+      }
+      //
+    }
   }
 }
 
