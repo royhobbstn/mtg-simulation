@@ -1,0 +1,23 @@
+{
+  "name": "mtg-simulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royhobbstn/mtg-simulation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royhobbstn/mtg-simulation/issues"
+  },
+  "homepage": "https://github.com/royhobbstn/mtg-simulation#readme",
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
+}
